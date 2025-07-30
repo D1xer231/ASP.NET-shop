@@ -1,63 +1,49 @@
-# 🛒 ASP.NET-shop
+# 🛒 ASP.NET Shop (Educational Project)
 
-> ⚠️ This project is created purely for **fun and experimental purposes**.  
-> It is not a real online store and is intended to demonstrate basic logic, file generation, and system control features using **ASP.NET Core MVC**.
-
----
-
-![C#](https://img.shields.io/badge/C%23-blue?style=for-the-badge&logo=c-sharp&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-6.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![ASP.NET](https://img.shields.io/badge/ASP.NET-MVC-black?style=for-the-badge&logo=dotnet)
-![XML](https://img.shields.io/badge/XML-FF6600?style=for-the-badge&logo=xml&logoColor=white)
+**ASP.NET Shop** is a simple web store built using ASP.NET. This project is created solely for educational purposes to practice web development, database interaction, and the ASP.NET MVC/WebForms architecture.
 
 ---
 
-## 📦 Project Overview
+## 📌 Purpose
 
-This is a humorous C# ASP.NET Core MVC web application where:
+> This project is **not intended** for production or commercial use.
 
-- Users enter basic data (name, age, amount of money)
-- The app generates an `.xml` file based on that input
-- If the user chooses **option 1** *and* enters **1000 or more**, the system attempts to **shut down** the PC 💣
+It was developed to demonstrate and practice:
 
----
-
-## ⚙️ Features
-
-- 🖥 Web interface built with Razor Pages (Views)
-- 📄 XML file generation based on user input
-- 🤖 Simple logic-based system behavior (shutdown)
-- 🧪 Demonstrates:
-  - Controllers & Views in ASP.NET Core
-  - User input handling
-  - File creation (System.Xml)
-  - Access to system commands (via `System.Diagnostics.Process`)
+- Basic ASP.NET application structure
+- Working with Entity Framework and SQL Server
+- Implementing MVC architecture with data and business logic layers
+- User authentication, roles, and CRUD operations
 
 ---
 
-## 🚀 Tech Stack
+## ⚙️ Technologies Used
 
-| Category      | Technology             |
-|---------------|------------------------|
-| Language      | C#                     |
-| Framework     | ASP.NET Core MVC 6.0   |
-| UI            | Razor Pages, HTML      |
-| Output        | XML File               |
-| Runtime       | .NET 6 (Windows)       |
-| Tools         | Visual Studio 2022     |
+- ASP.NET (MVC/WebForms)
+- C# (.NET Framework or .NET Core)
+- SQL Server / SQLite
+- Entity Framework
+- Razor, HTML, CSS, Bootstrap
 
 ---
 
-## 🧠 Purpose
+## 🚀 Features
 
-> This project is **not a real shop**. It’s a learning project with a comic twist 😄  
-It was built to:
-- Explore basic ASP.NET MVC patterns
-- Practice form handling and file I/O
-- Show off some funny conditional logic
-- Have fun experimenting with C# features
+- 📦 Product catalog with categories
+- 🔍 Search and filtering
+- 🛒 Shopping cart and checkout
+- 🔐 User registration, login, and roles (`User`, `Admin`)
+- ⚙️ Admin panel for managing products
+- 🖼️ Image upload for products
 
 ---
+
+## 🛠️ Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/D1xer231/ASP.NET-shop.git
+
 
 ## 📂 Project Structure
 
