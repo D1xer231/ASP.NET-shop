@@ -1,3 +1,9 @@
+[![Build](https://img.shields.io/badge/build-passing-brightgreen)]()
+[![Platform](https://img.shields.io/badge/platform-.NET-blue.svg)]()
+[![Status](https://img.shields.io/badge/status-learning_project-yellow)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/D1xer231/ASP.NET-shop/pulls)
+
+
 # 🛒 ASP.NET Shop (Educational Project)
 
 **ASP.NET Shop** is a simple web store built using ASP.NET. This project is created solely for educational purposes to practice web development, database interaction, and the ASP.NET MVC/WebForms architecture.
@@ -45,16 +51,3 @@ It was developed to demonstrate and practice:
    git clone https://github.com/D1xer231/ASP.NET-shop.git
 
 
-## 📂 Project Structure
-
-ASP.NET-shop/
-├── Controllers/
-│ └── HomeController.cs
-├── Models/
-│ └── UserModel.cs
-├── Views/
-│ └── Home/
-│ ├── Index.cshtml
-│ └── Result.cshtml
-├── Program.cs
-├── appsettings.json
