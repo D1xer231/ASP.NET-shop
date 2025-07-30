@@ -1,0 +1,13 @@
+﻿@model List<Item>
+@{
+    ViewData["Title"] = "Главная страница";
+    ViewData["H1"] = "Главная страница";
+}
+@foreach(var el in Model)
+{
+    <div class="item">
+        <a href="/home/product/@el.id"><img src="~/img/@el.image"/></a>
+        <h1>@el.name / @el.price.ToString("c")</h1>
+        <p>@el.description</p>
+    </div>
+}

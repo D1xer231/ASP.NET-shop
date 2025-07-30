@@ -1,0 +1,11 @@
+﻿@model Item
+
+@{
+    ViewData["Title"] = Model.name;
+}
+
+<div class="item">
+    <img src="~/img/@Model.image" />
+    <h1>@Model.name / @Model.price.ToString("c")</h1>
+    <p>@Model.fulltext</p>
+</div>
