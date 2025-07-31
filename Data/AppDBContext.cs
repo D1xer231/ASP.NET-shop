@@ -8,6 +8,7 @@ public class AppDBContext : DbContext
     public DbSet<Blog> posts { get; set; } = null!;
     public DbSet<Item> items { get; set; } = null!;
     public DbSet<Category> categories { get; set; } = null!;
+    public DbSet<Order> orders { get; set; } = null!;
 
     public AppDBContext(DbContextOptions<AppDBContext> options) : base(options) { }
 

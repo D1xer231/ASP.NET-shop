@@ -45,5 +45,28 @@ namespace MethShop.Controllers
 
             return Redirect("/cart");
         }
+
+        [HttpGet]
+        public ActionResult Order()
+        {
+            ViewBag.sessionItems = HttpContext.Session.GetString("items_id") ?? "";
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Order(Order order)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.orders.Add(order);
+                _context.SaveChanges();
+
+                return Redirect("/");
+            }
+
+            ViewBag.sessionItems = HttpContext.Session.GetString("items_id") ?? "";
+
+            return View();
+        }
     }
 }
