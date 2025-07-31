@@ -3,11 +3,5 @@
     ViewData["Title"] = "Мемы";
     ViewData["H1"] = "Мемы";
 }
-@foreach (var el in Model)
-{
-    <div class="item">
-        <a href="/home/product/@el.id"><img src="~/img/@el.image" /></a>
-        <h1>@el.name / @el.price.ToString("c")</h1>
-        <p>@el.description</p>
-    </div>
-}
+@foreach (Item el in Model)
+    @Html.Partial("ListItems", el)

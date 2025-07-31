@@ -1,0 +1,19 @@
+﻿@model List<Item>
+@{
+    ViewData["Title"] = "Корзина";
+    ViewData["H1"] = "Корзина";
+}
+
+<p>@ViewBag.NoItems</p>
+
+@foreach (Item el in Model)
+{
+    <div class="order-item">
+        <h1>@el.name</h1>
+        <p>Цена: @el.price.ToString("c")</p>
+    </div>
+}
+
+<div class="summary">
+    <p>Общая сумма: @ViewBag.Summary.ToString("c")</p>
+</div>

@@ -270,3 +270,9 @@ D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\bin\Debug\ne
 D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\obj\Debug\net8.0\MethShop.sourcelink.json
+D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+D:\c# projects\new generation\v.3\asp.netcore - 1\MethShop\MethShop\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

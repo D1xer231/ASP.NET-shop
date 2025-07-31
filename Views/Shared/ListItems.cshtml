@@ -1,0 +1,7 @@
+﻿@model MethShop.Models.Item
+
+<div class="item">
+    <a href="/home/product/@Model.id"><img src="~/img/@Model.image" /></a>
+    <h1>@Model.name / @Model.price.ToString("c")</h1>
+    <p>@Model.description</p>
+</div>
