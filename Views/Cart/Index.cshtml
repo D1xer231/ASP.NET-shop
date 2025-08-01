@@ -4,7 +4,9 @@
     ViewData["H1"] = "Корзина";
 }
 
-<p>@ViewBag.NoItems</p>
+@if (ViewBag.NoItems != null) {
+    <p>@ViewBag.NoItems</p>
+}
 
 @foreach (Item el in Model)
 {
@@ -14,7 +16,9 @@
     </div>
 }
 
-<div class="summary">
-    <p>Общая сумма: @ViewBag.Summary.ToString("c")</p>
-    <a href="/cart/order">Оплатить</a>
-</div>
+@if(ViewBag.Summary != null) {
+    <div class="summary">
+        <p>Общая сумма: @ViewBag.Summary.ToString("c")</p>
+        <a href="/cart/order">Оплатить</a>
+    </div>
+}

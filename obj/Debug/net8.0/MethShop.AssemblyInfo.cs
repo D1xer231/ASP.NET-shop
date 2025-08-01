@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MethShop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3967ef1b59c3f9abe6abacc52ccc0cb3b6af4610")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79b3e62dda183a8531bc24ddc6cf354f7847ebf5")]
 [assembly: System.Reflection.AssemblyProductAttribute("MethShop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MethShop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

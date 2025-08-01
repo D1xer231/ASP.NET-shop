@@ -47,6 +47,22 @@
           }
         }
       },
+      "CloudIpspSDK/1.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.1/CloudIpspSDK.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/CloudIpspSDK.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -3167,6 +3183,22 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "CloudIpspSDK/1.0.5": {
+      "sha512": "AHSteje+zMgpPCw70ZpMh0eD0Mp1U6rNYhJ8Wq1q3cY5nCsLoqZkS2fV0Ta7WjnVaXJvyKGE+t7z8nPjUeCEgQ==",
+      "type": "package",
+      "path": "cloudipspsdk/1.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cloudipspsdk.1.0.5.nupkg.sha512",
+        "cloudipspsdk.nuspec",
+        "images/icon.png",
+        "lib/netstandard2.0/CloudIpspSDK.dll",
+        "lib/netstandard2.0/CloudIpspSDK.pdb",
+        "lib/netstandard2.1/CloudIpspSDK.dll",
+        "lib/netstandard2.1/CloudIpspSDK.pdb"
       ]
     },
     "Humanizer/2.14.1": {
@@ -8575,6 +8607,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "CloudIpspSDK >= 1.0.5",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.11",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.11",
       "Microsoft.AspNetCore.Session >= 2.3.0",
@@ -8634,6 +8667,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "CloudIpspSDK": {
+            "target": "Package",
+            "version": "[1.0.5, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.11, )"

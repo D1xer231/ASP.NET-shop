@@ -1,6 +1,8 @@
 ﻿using MethShop.Data;
 using MethShop.Models;
 using Microsoft.AspNetCore.Mvc;
+using CloudIpspSDK;
+using CloudIpspSDK.Checkout;
 
 namespace MethShop.Controllers
 {
@@ -27,6 +29,7 @@ namespace MethShop.Controllers
             items = _context.items.Where(x => itemsId.Contains(x.id)).ToList();
 
             ViewBag.Summary = items.Sum(x => x.price);
+            TempData["summary"] = ViewBag.Summary;
 
             return View(items);
         }
@@ -61,7 +64,24 @@ namespace MethShop.Controllers
                 _context.orders.Add(order);
                 _context.SaveChanges();
 
-                return Redirect("/");
+                Config.MerchantId = 1397120;
+                Config.SecretKey = "test";
+
+                var req = new CheckoutRequest
+                {
+                    order_id = Guid.NewGuid().ToString("N"),
+                    amount = Convert.ToInt32(TempData["summary"]) *100, //сумму в копейках поэтому умножаем на 100 ==== 100000
+                    order_desc = "Оплата товара на сайте",
+                    currency = "UAH"
+                };
+                var resp = new Url().Post(req);
+                string url = "/";
+                if (resp.Error == null)
+                {
+                    url = resp.checkout_url;
+                }
+
+                return Redirect(url);
             }
 
             ViewBag.sessionItems = HttpContext.Session.GetString("items_id") ?? "";
