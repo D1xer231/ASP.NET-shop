@@ -16,5 +16,30 @@ namespace MethShop.Controllers
             List<Blog> posts = _context.posts.ToList();
             return View(posts);
         }
+
+        public ActionResult Add()
+        {
+            return View(new Blog());
+        }
+
+        [HttpPost]
+        public IActionResult Add(Blog post)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.posts.Add(post);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(post);
+        }
+
+        
+
+        // [Route("blog/{id:int}/delete")]
+        // public ActionResult Delete(int id)
+        // {
+
+        // }
     }
 }

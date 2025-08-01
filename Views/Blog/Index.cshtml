@@ -9,5 +9,7 @@
     <div class="item">
         <h1>@el.Title</h1>
         <p>@el.Anons</p>
+        <a asp-action="Edit" asp-route-id="@el.Id">Редактировать</a>
+        <a asp-action="Delete" asp-route-id="@el.Id">Удалить</a>
     </div>
 }
