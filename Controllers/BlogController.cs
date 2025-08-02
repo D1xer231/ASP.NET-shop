@@ -34,12 +34,34 @@ namespace MethShop.Controllers
             return View(post);
         }
 
-        
+        // EDIT
+        public IActionResult Edit(int id)
+        {
+            var post = _context.posts.FirstOrDefault(p => p.Id == id);
+            if (post == null) return NotFound();
+            return View(post);
+        }
 
-        // [Route("blog/{id:int}/delete")]
-        // public ActionResult Delete(int id)
-        // {
+        [HttpPost]
+        public IActionResult Edit(Blog post)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.posts.Update(post);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(post);
+        }
 
-        // }
+        // DELETE
+        public IActionResult Delete(int id)
+        {
+            var post = _context.posts.FirstOrDefault(p => p.Id == id);
+            if (post == null) return NotFound();
+            _context.posts.Remove(post);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

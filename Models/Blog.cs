@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
 
 namespace MethShop.Models;
 public class Blog

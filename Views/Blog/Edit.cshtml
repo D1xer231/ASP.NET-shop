@@ -1,12 +1,16 @@
 ﻿@model Blog
 @{
-    ViewData["Title"] = "Посты";
+    ViewData["Title"] = Model.Id == 0 ? "Добавить пост" : "Редактировать пост";
 }
+<p>Model.Id: @Model.Id</p>
+<input type="hidden" name="Id" value="3" />
 
 <h1>@ViewData["Title"]</h1>
 
 <div class="item order">
-    <form method="post" asp-controller="Blog" asp-action="@(Model.Id == 0 ? "Add" : "Edit")">
+    <form method="post" asp-controller="Blog" asp-action="Edit">
+        <input type="hidden" asp-for="Id" />
+
         <label asp-for="Title"></label>
         <input asp-for="Title" />
         <span asp-validation-for="Title" class="error"></span>
@@ -19,6 +23,6 @@
         <input asp-for="FullText" />
         <span asp-validation-for="FullText" class="error"></span>
 
-        <input type="submit" value="Добавить"/>
+        <input type="submit" value="@(Model.Id == 0 ? "Добавить" : "Сохранить изменения")" />
     </form>
 </div>
